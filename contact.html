@@ -1,108 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Frankie Sellars</title>
-  <link rel="icon" type="image/png" href="images/TinyLogo.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-</head>
+---
+layout: default
+title: Contact
+---
 
-<body>
-  <script>
-  const navToggle = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
+<div class="banner">
+  <h1>Contact</h1>
+</div>
 
-  navToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("nav-open");
-  });
-  </script>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <img src="images/FullLogoWHITE.png" alt="Frankie Sellars Logo">
-      </a>
-
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <ul class="nav-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="listen.html">Listen</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="banner">
+<main class="page">
+  <div class="content-box">
     <h1>Contact</h1>
-  </div>
-  <main class="page">
-    <div class="content-box">
-      <h1>Contact</h1>
-    <p>Feel free to reach out for collaborations, lessons, or inquiries. I look forward to receiving your message! </p>
+    <p>Feel free to reach out for collaborations, lessons, or inquiries. I look forward to receiving your message!</p>
+
     <form class="contact-form">
       <div class="form-group">
         <label for="name">Name</label>
         <input id="name" type="text" required>
       </div>
+
       <div class="form-group">
         <label for="email">Email</label>
         <input id="email" type="email" required>
       </div>
+
       <div class="form-group">
         <label for="message">Message</label>
         <textarea id="message" rows="5" required></textarea>
       </div>
+
       <button type="submit" class="contact-submit">Send Message</button>
     </form>
-    </div>
-  </main>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const navToggle = document.querySelector(".nav-toggle");
-    const navLinks = document.querySelector(".nav-links");
-
-    navToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("nav-open");
-    });
-  });
-</script>
-</body>
-<footer class="footer">
-  <div class="footer-container-center">
-
-    <!-- LOGO -->
-    <div class="footer-logo">
-      <img src="images/FullLogoWHITE.png" alt="Frankie Sellars Logo">
-    </div>
-
-    <!-- LINKS -->
-    <div class="footer-links">
-      <a href="about.html">About</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="blog.html">Blog</a>
-      <a href="listen.html">Listen</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <!-- SOCIAL ICONS -->
-    <div class="footer-social">
-      <a href="https://www.instagram.com/bassbubbs" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="mailto:frankiesellarsbass@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
-
-    <!-- COPYRIGHT -->
-    <p class="footer-copy">
-      © 2025 Frankie Sellars · All Rights Reserved
-    </p>
 
   </div>
-</footer>
-
-</html>
+</main>
