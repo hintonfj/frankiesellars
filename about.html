@@ -1,96 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Frankie Sellars</title>
-  <link rel="icon" type="image/png" href="images/TinyLogo.png">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-</head>
+---
+layout: default
+title: About
+---
 
-<body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <img src="{{ site.baseurl }}/images/FullLogoWHITE.png" alt="Frankie Sellars Logo">
-      </a>
+<div class="banner">
+  <h1>About</h1>
+</div>
 
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <ul class="nav-links">
-        <li><a class="active" href="about.html">About</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="listen.html">Listen</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+<main class="page">
+  <div class="content-split">
+    <div class="left-split">
+      <img src="/images/aboutPic.JPG" alt="About Frankie Sellars">
     </div>
-  </nav>
-  <div class="banner">
-    <h1>About</h1>
-  </div>
-  <main class="page">
-    <div class="content-split">
-      <div class="left-split">
-        <img src="{{ site.baseurl }}/images/aboutPic.JPG" alt="About Frankie Sellars">
-      </div>
-      <div class="right-split">
+
+    <div class="right-split">
         <div class="content-box">
           <p>Frankie Sellars (they/them) is a double bassist and teacher located in Harrisonburg, VA. Frankie is currently studying Double Bass Performance at James Madison University, studying with Sam Suggs. They also spent a semester abroad in Vienna, Austria, where they studied with Elisabeth Sánchez-Herrera from the University of Music and Performing Arts, Vienna.</p>
           <p>Frankie has performed with the NSO Summer Music Institute and the Rockbridge Orchestra. Frankie currently performs with the JMU Symphony Orchestra and Madison Baroque, JMU’s early music ensemble.</p>
           <p>Frankie is constantly advocating for making music fun, inclusive and accessible to all students. Frankie has extensive teaching experience, has taught and mentored at BassWorks and AYPO Summer Strings Academy, and has provided private lessons to ages 6-25, beginner-advanced. Frankie is a multi-faceted musician in a variety of styles such as classical, contemporary and bluegrass.</p>
           <p>When they aren’t rehearsing or practicing, you can find Frankie crafting or spending a weekend outdoors hiking, backpacking, and gazing at birds.</p>
         </div>
-      </div>
     </div>
-  </main>
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const navToggle = document.querySelector(".nav-toggle");
-    const navLinks = document.querySelector(".nav-links");
-
-    navToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("nav-open");
-    });
-  });
-  </script>
-</body>
-
-<footer class="footer">
-    <div class="footer-container-center">
-
-      <!-- LOGO -->
-      <div class="footer-logo">
-        <img src="{{ site.baseurl }}/images/FullLogoWHITE.png" alt="Frankie Sellars Logo">
-      </div>
-
-      <!-- LINKS -->
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="blog.html">Blog</a>
-        <a href="listen.html">Listen</a>
-        <a href="contact.html">Contact</a>
-      </div>
-
-      <!-- SOCIAL ICONS -->
-    <div class="footer-social">
-      <a href="https://www.instagram.com/bassbubbs" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="mailto:frankiesellarsbass@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
-
-      <!-- COPYRIGHT -->
-      <p class="footer-copy">
-        © 2025 Frankie Sellars · All Rights Reserved
-      </p>
-
-    </div>
-  </footer>
-
-
-</html>
+  </div>
+</main>
