@@ -369,12 +369,11 @@ body {
   z-index: 9999;
 }
 
-
 @media (max-width: 768px) {
 
   .nav-toggle {
     display: block;
-    color: #eef2e0; /* softer hamburger */
+    color: #eef2e0;
   }
 
   .nav-links {
@@ -382,7 +381,7 @@ body {
     top: 70px;
     right: 0;
     width: 100%;
-    background: #eef2e0; /* light dropdown */
+    background: #eef2e0;
     flex-direction: column;
     display: none;
     z-index: 9999;
@@ -393,29 +392,33 @@ body {
     display: flex;
   }
 
+  /* REMOVE padding from li */
   .nav-links li {
-    padding: 0.8rem 0;
+    padding: 0;
   }
 
-  /* default mobile links */
+  /* MAKE LINKS FULL-WIDTH BUTTONS */
   .nav-links a {
-    color: #1d4b32; /* dark green text */
+    display: block;              /* 🔥 key line */
+    width: 100%;
+    padding: 1rem 2rem;          /* big tap target */
+    color: #1d4b32;
     font-size: 1.1rem;
-    border-bottom: none;
+    text-align: center;
+    border-radius: 0;
   }
 
-  /* hover state */
   .nav-links a:hover {
+    background: rgba(227, 122, 25, 0.15);
     color: #e37a19;
   }
 
-  /* ACTIVE mobile tab */
+  /* ACTIVE TAB = FULL-WIDTH HIGHLIGHT */
   .nav-links a.active {
-    color: #b9a4c9;
-    background: rgba(185, 164, 201, 0.15);
-    border-radius: 6px;
-    padding: 0.4rem 0.8rem;
+    background: rgba(185, 164, 201, 0.25); /* purple highlight */
+    color: #1d4b32;
     font-weight: 700;
   }
 }
+
 
