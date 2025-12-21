@@ -353,3 +353,44 @@ body {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* ==== MOBILE NAVIGATION ==== */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  /* hide nav links on mobile */
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #1d4b32;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 0;
+    padding: 1rem 0;
+    display: none; /* start hidden */
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
+
+  /* show the menu when active */
+  .nav-links.nav-open {
+    display: flex;
+  }
+
+  /* display hamburger button */
+  .nav-toggle {
+    display: block;
+  }
+}

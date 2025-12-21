@@ -11,15 +11,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 
+<script>
+  const navToggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-open");
+  });
+</script>
+
 <body>
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">
         <img src="images/FullLogoWHITE.png" alt="Frankie Sellars Logo">
       </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
-        <li><a class="active" href="teaching.html">Teaching</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="listen.html">Listen</a></li>
         <li><a href="contact.html">Contact</a></li>
