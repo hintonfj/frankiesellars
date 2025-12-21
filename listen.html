@@ -11,14 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 
-<script>
-  const navToggle = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
-
-  navToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("nav-open");
-  });
-</script>
 
 <body>
   <nav class="navbar">
@@ -35,7 +27,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="listen.html">Listen</a></li>
+        <li><a class="active" href="listen.html">Listen</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -78,8 +70,16 @@
 
   </div>
 </main>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-open");
+    });
+  });
+</script>
 </body>
 <footer class="footer">
   <div class="footer-container-center">

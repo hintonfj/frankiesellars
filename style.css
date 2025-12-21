@@ -364,6 +364,11 @@ body {
   cursor: pointer;
 }
 
+.nav-links {
+  z-index: 9999;
+}
+
+
 @media (max-width: 768px) {
 
   /* hide nav links on mobile */
@@ -371,22 +376,19 @@ body {
     position: absolute;
     top: 70px;
     right: 0;
+    width: 100%;
     background: #1d4b32;
     flex-direction: column;
-    width: 100%;
-    text-align: center;
-    gap: 0;
-    padding: 1rem 0;
-    display: none; /* start hidden */
+    display: none;
+    z-index: 9999; /* <-- required */
+  }
+
+  .nav-links.nav-open {
+    display: flex;
   }
 
   .nav-links li {
     padding: 1rem 0;
-  }
-
-  /* show the menu when active */
-  .nav-links.nav-open {
-    display: flex;
   }
 
   /* display hamburger button */

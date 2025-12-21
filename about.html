@@ -17,6 +17,11 @@
       <a href="index.html" class="logo">
         <img src="images/FullLogoWHITE.png" alt="Frankie Sellars Logo">
       </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
       <ul class="nav-links">
         <li><a class="active" href="about.html">About</a></li>
         <li><a href="teaching.html">Teaching</a></li>
@@ -44,6 +49,16 @@
       </div>
     </div>
   </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-open");
+    });
+  });
+  </script>
 </body>
 
 <footer class="footer">
