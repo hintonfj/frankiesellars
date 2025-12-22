@@ -378,6 +378,7 @@ body {
   }
 
   .nav-links {
+    gap: 0%;
     position: absolute;
     top: 70px;
     right: 0;
@@ -386,7 +387,7 @@ body {
     flex-direction: column;
     display: none;
     z-index: 9999;
-    padding: 0.5rem 0;
+    padding: 0rem 0rem;
   }
 
   .nav-links.nav-open {
@@ -396,15 +397,13 @@ body {
   /* REMOVE padding from li */
   .nav-links li {
     padding: 0;
-    margin-top: 0%;
-    margin-bottom: 0%;
   }
 
   /* MAKE LINKS FULL-WIDTH BUTTONS */
   .nav-links a {
-    display: block;              /* 🔥 key line */
+    display: block;
     width: 100%;
-    padding: 1rem 2rem;          /* big tap target */
+    padding: 1rem 2rem;
     color: #1d4b32;
     font-size: 1.1rem;
     text-align: center;
@@ -448,6 +447,7 @@ body {
     padding: 1.8rem;
     text-align: left;
   }
+  
 }
 
 
