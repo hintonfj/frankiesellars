@@ -402,7 +402,7 @@ body {
   .nav-links a {
     display: block;              /* 🔥 key line */
     width: 100%;
-    padding: 1rem 2rem;          /* big tap target */
+    padding: 0rem 2rem;          /* big tap target */
     color: #1d4b32;
     font-size: 1.1rem;
     text-align: center;
