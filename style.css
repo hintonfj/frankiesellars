@@ -355,7 +355,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* ==== MOBILE NAVIGATION ==== */
+/*  MOBILE NAVIGATION  */
 .nav-toggle {
   display: none;
   background: none;
@@ -371,6 +371,7 @@ body {
 
 @media (max-width: 768px) {
 
+  /* mobile nav */
   .nav-toggle {
     display: block;
     color: #eef2e0;
@@ -406,6 +407,7 @@ body {
     font-size: 1.1rem;
     text-align: center;
     border-radius: 0;
+    border-bottom: 1px solid rgba(29, 75, 50, 0.15);
   }
 
   .nav-links a:hover {
@@ -418,6 +420,31 @@ body {
     background: rgba(185, 164, 201, 0.25); /* purple highlight */
     color: #1d4b32;
     font-weight: 700;
+  }
+
+  /* mobile about page */
+  .content-split {
+    grid-template-columns: 1fr; /* stack */
+  }
+
+  .left-split img {
+    border-radius: 10px 10px 0 0;
+    max-height: 350px;
+    object-fit: cover;
+  }
+
+  .right-split div {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2 .content-box {
+    padding: 1.8rem;
+    text-align: left;
   }
 }
 
