@@ -126,12 +126,12 @@ body {
   font-style: italic;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  color: #e37a19;
+  color: #D46025;
 }
 
 .page h2 {
   font-family: 'Playfair Display', serif;
-  background: #6C6D11;
+  background: #D46025;
   color: #ffffff;
   padding: 0.9rem 1.5rem;
   margin: -2.5rem -2.5rem 1.5rem;
@@ -143,12 +143,12 @@ body {
 
 .grid-3 h2 {
   font-family: 'Playfair Display', serif;
-  background: #8a8b1e;
+  background: #D46025;
   color: #ffffff;
   padding: 5rem 1.5rem;
   margin: -2.5rem -2.5rem 1.5rem;
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   border-radius: 10px 10px 0 0;
 }
@@ -156,7 +156,6 @@ body {
 .grid-3 p {
   text-align: center;
 }
-
 
 .page p {
   font-size: 1.1rem;
@@ -217,6 +216,10 @@ body {
   padding: 2.5rem;
   box-shadow: none;
   transition: 0.2s ease;
+}
+
+.grid-3 .content-box {
+  padding-bottom: 0%;
 }
 
 /* CONTACT FORM SPECS */
@@ -312,7 +315,7 @@ body {
 }
 
 .footer-links a:hover {
-  color: #d88a3c;
+  color: #D46025;
   transform: translateY(-3px);
 }
 
@@ -403,7 +406,7 @@ body {
 
   .nav-links a:hover {
     background: rgba(227, 122, 25, 0.15);
-    color: #e37a19;
+    color: #D46025;
   }
   .content-box h2 {
     font-size: 1.5rem;
