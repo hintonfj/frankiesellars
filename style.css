@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Lora', serif;
-  background: #5D2D46;
+  background: #5A2F4C;
   color: #111111;
   line-height: 1.7;
 }
@@ -51,7 +51,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-  background: #324229;
+  background: #3A4A34;
   color: white;
   padding: 1rem 2rem;
 }
@@ -80,15 +80,15 @@ body {
 }
 
 .nav-links a:hover {
-  border-bottom-color: #dce3c2;
-  border-top-color: #dce3c2;
-  color: #dce3c2;
+  border-bottom-color: #D46025;
+  border-top-color: #D46025;
+  color: #D46025;
 }
 
 .nav-links a.active {
-  border-bottom-color: #CCB9DA;
-  border-top-color: #CCB9DA;
-  color: #CCB9DA;
+  border-bottom-color: #D4C4E2;
+  border-top-color: #D4C4E2;
+  color: #D4C4E2;
   font-weight: 700;
 }
 
@@ -113,8 +113,8 @@ body {
   font-weight: 900;
   padding: 1rem 2rem;
   margin-bottom: 1rem;
-  background: #CCB9DA;
-  color: #5D2D46;
+  background: #D4C4E2;
+  color: #5A2F4C;
   /* Layout */
   width: 100%;
   display: block;
@@ -238,7 +238,7 @@ body {
 
 .form-group label {
   font-weight: 700;
-  color: #5D2D46;
+  color: #5A2F4C;
   font-size: 1.1rem;
 }
 
@@ -257,7 +257,7 @@ body {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #CCB9DA;
+  border-color: #D4C4E2;
 }
 
 .contact-submit {
@@ -273,9 +273,9 @@ body {
 }
 
 .contact-submit:hover {
-  background: #dce3c2;
-  border-color: #CCB9DA;
-  color: #CCB9DA;
+  background: #D4C4E2;
+  border-color: #D4C4E2;
+  color: #324229;
   transform: translateY(-3px);
 }
 
@@ -337,7 +337,7 @@ body {
 }
 
 .footer-social a:hover {
-  color: #CCB9DA;
+  color: #D4C4E2;
   transform: translateY(-3px);
 }
 
