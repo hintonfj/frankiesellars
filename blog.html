@@ -9,17 +9,26 @@ title: Blog
 
 <main class="page">
   <div class="content-box">
-    <h2>Frankie's Substack</h2>
-    <p>Read my latest writing directly through Substack!</p>
 
-    <iframe
-      src="https://frankiesellars.substack.com/embed"
-      width="100%"
-      height="600"
-      style="border: 1px solid #b9a4c9; border-radius: 12px;"
-      frameborder="0"
-      scrolling="yes">
-    </iframe>
+    <h2>Frankie's Writing</h2>
+    <p>
+      Recent writings, reflections, and work posted for your viewing and discussion on Substack.
+    </p>
+    <div class="substack-cta">
+      <a
+        href="https://frankiesellars.substack.com"
+        target="_blank"
+        rel="noopener"
+        class="contact-submit">
+        Subscribe to posts on Substack →
+      </a>
+    </div>
+    <section class="recent-posts">
+      <h3>Latest Post</h3>
+
+      {% include latest-substack-post.html %}
+
+    </section>
 
   </div>
 </main>
