@@ -362,6 +362,18 @@ body {
   z-index: 9999;
 }
 
+a,
+button,
+.card,
+.content-box {
+  transition: 
+    color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
 @media (max-width: 768px) {
 
   /* mobile nav */
@@ -418,6 +430,16 @@ body {
     background: rgba(185, 164, 201, 0.25); /* purple highlight */
     color: #324229;
     font-weight: 700;
+  }
+
+  .logo {
+    max-width: 65%;
+    flex-shrink: 1;
+  }
+
+  .logo img {
+    max-width: 100%;
+    height: auto;
   }
 
   /* mobile about page */
