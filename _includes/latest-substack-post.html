@@ -1,0 +1,16 @@
+{% assign feed = site.data.substack_feed %}
+{% assign post = feed.items[0] %}
+
+{% if post %}
+  <div class="latest-post">
+    <h4>
+      <a href="{{ post.link }}" target="_blank" rel="noopener">
+        {{ post.title }}
+      </a>
+    </h4>
+
+    <p>
+      {{ post.content | strip_html | truncate: 180 }}
+    </p>
+  </div>
+{% endif %}

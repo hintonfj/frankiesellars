@@ -275,7 +275,7 @@ body {
 .contact-submit:hover {
   background: #D4C4E2;
   border-color: #D4C4E2;
-  color: #324229;
+  color: #5A2F4C;
   transform: translateY(-3px);
 }
 
@@ -348,6 +348,50 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.substack-cta {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0 3rem;
+}
+
+.substack-cta .contact-submit {
+  font-size: 1.15rem;
+  padding: 1.1rem 2rem;
+}
+
+.latest-post h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.latest-post a {
+  font-weight: 700;
+  color: #324229;
+  text-decoration: none;
+}
+
+.latest-post a:hover {
+  color: #D46025;
+  text-decoration: underline;
+}
+
+.latest-post p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+a,
+button,
+.card,
+.content-box {
+  transition: 
+    color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
 /*  MOBILE NAVIGATION  */
 .nav-toggle {
   display: none;
@@ -360,17 +404,6 @@ body {
 
 .nav-links {
   z-index: 9999;
-}
-
-a,
-button,
-.card,
-.content-box {
-  transition: 
-    color 0.25s ease,
-    background-color 0.25s ease,
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
 }
 
 

@@ -2,3 +2,13 @@ title: Frankie Sellars' Website
 description: Learn more about Frankie Sellars!
 markdown: kramdown
 baseurl: "/frankiesellars"
+substack_feed: https://frankiesellars.substack.com/feed
+
+plugins:
+  - jekyll-feed
+  - jekyll-get
+
+jekyll_get:
+  data:
+    - file: substack_feed
+      url: https://frankiesellars.substack.com/feed
