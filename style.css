@@ -351,6 +351,39 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* BLOG INTRO TREATMENT */
+.blog-intro {
+  text-align: center;
+}
+
+.blog-description {
+  max-width: 80ch;
+  text-align: center;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/* SUBSTACK BUTTON – softer + editorial */
+.substack-button {
+  display: inline-block;
+  padding: 0.85rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5d2d46; /* blackberry cream */
+  background: transparent;
+  border: 2px solid #ccb9da; /* thistle */
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.substack-button:hover {
+  background: #ccb9da;
+  color: #5d2d46;
+  transform: translateY(-2px);
+}
+
 .substack-cta {
   display: flex;
   justify-content: center;
@@ -383,6 +416,12 @@ body {
   font-size: 1.05rem;
   color: #333;
 }
+
+.recent-posts {
+  text-align: left;
+  margin-top: 3rem;
+}
+
 
 a,
 button,
