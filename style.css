@@ -54,6 +54,8 @@ body {
   background: #3A4A34;
   color: white;
   padding: 1rem 2rem;
+  position: relative;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -103,7 +105,7 @@ body {
 .banner {
   display: flex;
   justify-content: center;
-  margin: 0rem 0 2rem;
+  margin: 0rem;
 }
 
 .banner h1 {
@@ -112,7 +114,7 @@ body {
   font-size: 3rem;
   font-weight: 900;
   padding: 1rem 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   background: #dfd0ec;
   color: #5A2F4C;
   /* Layout */
@@ -460,18 +462,27 @@ button,
   .nav-links {
     gap: 0%;
     position: absolute;
-    top: 70px;
+    top: 100%; 
     right: 0;
     width: 100%;
     background: #fefcfd;
     flex-direction: column;
-    display: none;
     z-index: 9999;
-    padding: 0rem 0rem;
+
+    transform: translateY(-2px);
+    opacity: 0;
+    pointer-events: none;
+
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
   }
 
   .nav-links.nav-open {
     display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   /* REMOVE padding from li */
