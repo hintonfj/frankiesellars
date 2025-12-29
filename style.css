@@ -10,7 +10,6 @@ body {
   background: #5A2F4C;
   color: #111111;
   line-height: 1.7;
-  margin-bottom: 4rem;
 }
 
 .section {
@@ -81,9 +80,9 @@ body {
 }
 
 .nav-links a:hover {
-  border-bottom-color: #D46025;
-  border-top-color: #D46025;
-  color: #D46025;
+  border-bottom-color: #c45522;
+  border-top-color: #c45522;
+  color: #c45522;
 }
 
 .nav-links a.active {
@@ -114,7 +113,7 @@ body {
   font-weight: 900;
   padding: 1rem 2rem;
   margin-bottom: 1rem;
-  background: #D4C4E2;
+  background: #dfd0ec;
   color: #5A2F4C;
   /* Layout */
   width: 100%;
@@ -127,12 +126,16 @@ body {
   font-style: italic;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  color: #D46025;
+  color: #c45522;
 }
 
 .page h2 {
   font-family: 'Playfair Display', serif;
-  background: #D46025;
+
+  background: #c45522;
+  color: #5d2d46;
+  border-bottom: 4px solid #5A2F4C;
+
   color: #ffffff;
   padding: 0.9rem 1.5rem;
   margin: -2.5rem -2.5rem 1.5rem;
@@ -144,7 +147,7 @@ body {
 
 .grid-3 h2 {
   font-family: 'Playfair Display', serif;
-  background: #D46025;
+  background: #c45522;
   color: #ffffff;
   padding: 5rem 1.5rem;
   margin: -2.5rem -2.5rem 1.5rem;
@@ -315,7 +318,7 @@ body {
 }
 
 .footer-links a:hover {
-  color: #D46025;
+  color: #c45522;
   transform: translateY(-3px);
 }
 
@@ -371,7 +374,7 @@ body {
 }
 
 .latest-post a:hover {
-  color: #D46025;
+  color: #c45522;
   text-decoration: underline;
 }
 
@@ -451,7 +454,7 @@ button,
 
   .nav-links a:hover {
     background: rgba(227, 122, 25, 0.15);
-    color: #D46025;
+    color: #c45522;
   }
   .content-box h2 {
     font-size: 1.5rem;
@@ -484,6 +487,8 @@ button,
     border-radius: 10px 10px 0 0;
     max-height: 350px;
     object-fit: cover;
+    top: 0;
+    vertical-align: top;
   }
 
   .right-split div {
